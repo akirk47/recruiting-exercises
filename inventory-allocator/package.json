@@ -1,0 +1,14 @@
+{
+  "name": "inventory-allocator",
+  "version": "1.0.0",
+  "description": "The problem is compute the best way an order can be shipped (called shipments) given inventory across a set of warehouses (called inventory distribution).",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
+}
