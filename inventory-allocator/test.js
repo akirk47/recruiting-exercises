@@ -95,5 +95,13 @@ describe('Test Cases for invalid orders', function(){
         const cheapest = inventoryAllocator.findCheapest();
         assert.deepEqual(cheapest, [])
     })
+
+    it('should return empty array if no order', function(){
+        const order = {};
+        const inventory = [{ name: "first", inventory: { banana: 1 } }];
+        const inventoryAllocator = new InventoryAllocator(order, inventory);
+        const cheapest = inventoryAllocator.findCheapest();
+        assert.deepEqual(cheapest, [])
+    })
 })
 
